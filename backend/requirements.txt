@@ -1,0 +1,8 @@
+flask
+Flask-CORS
+sqlalchemy
+requests
+python-dotenv
+flask-sqlalchemy
+marshmallow
+

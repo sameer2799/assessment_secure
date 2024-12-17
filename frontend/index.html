@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CVE Tracker</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CVE Vulnerabilities</h1>
+        <div class="filters">
+            <select id="resultsPerPage">
+                <option value="10">10 per page</option>
+                <option value="50">50 per page</option>
+                <option value="100">100 per page</option>
+            </select>
+            <input type="number" id="yearFilter" placeholder="Filter by Year">
+            <input type="number" step="0.1" id="scoreFilter" placeholder="Min CVSS Score">
+        </div>
+        <table id="cveTable">
+            <thead>
+                <tr>
+                    <th>CVE ID</th>
+                    <th>Description</th>
+                    <th>Published Date</th>
+                    <th>Last Modified Date</th>
+                    <th>CVSS Score</th>
+                </tr>
+            </thead>
+            <tbody id="cveTableBody"></tbody>
+        </table>
+        <div class="pagination">
+            <button id="prevPage">Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage">Next</button>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
